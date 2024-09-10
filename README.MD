@@ -1,9 +1,3 @@
-# RHYMES CRM
-
-## Documentation
-
-[Postman workspace collection](https://rhymesmusic.postman.co/workspace/lead-rm~a0b106c7-3d29-4cbb-ad94-dcb8d580e360/collection/27961349-945a9d85-f9f9-49ac-b22b-a5eae3a1b1b9)
-
 ## Install project
 
 To install on linux, use the **make** utility
@@ -66,7 +60,3 @@ If everything is fine, you will see the login form at the link:
 **Other**
 - **make terminal** - login to php-fpm container (bash)
 - **make cache-clear** - clear application cache
-
-## Licensing
-
-© 2011-2024 RHYMES MUSIC ALL RIGHTS RESERVED I PRIVACY POLICY
