@@ -1,0 +1,25 @@
+parameters:
+    app.base_url: '%env(SITE_BASE_URL)%'
+
+    # directory paths
+    files.user_photo.path: 'uploads/user_photo'
+    files.user_photo.path_full: '%kernel.project_dir%/public/%files.user_photo.path%'
+
+    # optimize
+    .container.dumper.inline_factories: true
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+
+    App\Doctrine\EventListener\FixPostgreSQLDefaultSchemaListener:
+        tags:
+            - { name: doctrine.event_listener, event: postGenerateSchema }

@@ -1,0 +1,82 @@
+//@import "~bootstrap/scss/bootstrap";
+@import url("https://use.typekit.net/oyu6twk.css");
+@import '~primevue/resources/themes/aura-light-blue/theme.css';
+@import '~primevue/resources/primevue.min.css';
+@import '~primeflex/primeflex.css';
+@import '~primeicons/primeicons.css';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+@import './include/sidebar.scss';
+@import './include/flags.scss';
+
+body {
+    background: rgb(239, 243, 248);
+    height: 100%;
+    font-family: "lato", sans-serif;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+
+table a {
+    color: #0d6efd;
+    text-decoration:none;
+
+    &:hover {
+        color: #0a58ca;
+    }
+}
+
+.locale-changer .p-dropdown-label {
+    width: 30px;
+}
+
+.p-component-overlay {
+    background-color: rgba(243, 243, 243, 0.57);
+}
+
+.add-bank-detail-button {
+    color:#6366F1 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+}
+
+.zoom-button button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    border-radius: 50%;
+    height: 48px;
+}
+
+.p-tabview .p-tabview-panels {
+    padding: 1.25rem 0;
+}
+
+.artist-avatar {
+    .p-avatar {
+        img {
+            border-radius: 6px;
+        }
+    }
+    .zoom-button button {
+        height: 48px;
+        width: 48px;
+    }
+    .p-image-preview-indicator {
+        left: 40%;
+        top: 36%;
+    }
+}
+
+.card {
+    border: 1px solid #e2e8f0;
+    padding: 1.125rem;
+    background: #ffffff;
+    color: #334155;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}

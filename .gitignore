@@ -1,0 +1,7 @@
+.idea
+
+docker/logs
+
+.env
+.env.production
+.env.dev

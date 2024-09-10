@@ -1,0 +1,15 @@
+api_routes:
+    resource:
+        path: ../src/Controller/Api
+        namespace: App\Controller\Api
+    type: attribute
+
+vue_routes:
+    path: /{wildcard}
+    controller: App\Controller\BaseController::index
+    requirements:
+        wildcard: .*
+
+api_login_check:
+    path: /api/login_check
+
